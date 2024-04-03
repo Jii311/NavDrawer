@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NavDrawerExample</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string-array name="solo_singer">
+        <item>Ardhito Pramono</item>
+        <item>Billie Eilish</item>
+        <item>Gangga</item>
+        <item>Hindia</item>
+        <item>Nadhif Basalamah</item>
+        <item>James Arthur</item>
+        <item>Keshi</item>
+        <item>Teddy Aditya</item>
+    </string-array>
+    <string-array name="band">
+        <item>Coldplay</item>
+        <item>GAC</item>
+        <item>Hivi!</item>
+        <item>Juicy Luicy</item>
+        <item>Payung Teduh</item>
+        <item>Reality Club</item>
+        <item>The Overtunes</item>
+        <item>Wave To Earth</item>
+    </string-array>
+</resources>
