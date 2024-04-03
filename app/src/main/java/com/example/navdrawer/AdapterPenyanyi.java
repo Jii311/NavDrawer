@@ -14,18 +14,18 @@ import java.util.List;
 
 public class AdapterPenyanyi extends RecyclerView.Adapter<AdapterPenyanyi.MyViewHolder> {
     Context context;
-    List<ModelPenyanyi> modelPenyanyi;
+    List<ModelPenyanyi> modelPenyanyis;
     private ItemClickListener mClickListener;
 
-    public AdapterPenyanyi(Context context, List<ModelPenyanyi> modelPenyanyi){
+    public AdapterPenyanyi(Context context, List<ModelPenyanyi> modelPenyanyis){
         this.context = context;
-        this.modelPenyanyi = modelPenyanyi;
+        this.modelPenyanyis = modelPenyanyis;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
+        LayoutInflater inflater =LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.content_layout, parent, false);
 
         return new AdapterPenyanyi.MyViewHolder(view);
@@ -33,14 +33,13 @@ public class AdapterPenyanyi extends RecyclerView.Adapter<AdapterPenyanyi.MyView
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.textName.setText(modelPenyanyi.get(position).getTextName());
-        holder.imageView.setImageResource(modelPenyanyi.get(position).getImageView());
+        holder.textName.setText(modelPenyanyis.get(position).getName());
+        holder.imageView.setImageResource(modelPenyanyis.get(position).getImage());
     }
-
 
     @Override
     public int getItemCount() {
-        return modelPenyanyi.size();
+        return modelPenyanyis.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -62,7 +61,7 @@ public class AdapterPenyanyi extends RecyclerView.Adapter<AdapterPenyanyi.MyView
             if (mClickListener != null) mClickListener.onItemClick(view, getAdapterPosition());
         }
     }
-    public ModelPenyanyi getItem(int id) {return  modelPenyanyi.get(id);}
+    public ModelPenyanyi getItem(int id) {return  modelPenyanyis.get(id);}
     public void setClickListener(ItemClickListener itemClickListener) {
         this.mClickListener = itemClickListener;
     }

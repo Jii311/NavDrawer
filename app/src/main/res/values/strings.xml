@@ -7,12 +7,13 @@
         <item>Billie Eilish</item>
         <item>Gangga</item>
         <item>Hindia</item>
-        <item>Nadhif Basalamah</item>
         <item>James Arthur</item>
         <item>Keshi</item>
+        <item>Nadhif Basalamah</item>
         <item>Teddy Aditya</item>
     </string-array>
-    <string-array name="band">
+
+    <string-array name="group_band">
         <item>Coldplay</item>
         <item>GAC</item>
         <item>Hivi!</item>
@@ -22,4 +23,6 @@
         <item>The Overtunes</item>
         <item>Wave To Earth</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

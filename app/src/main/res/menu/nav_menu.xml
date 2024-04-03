@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_item1"
-        android:icon="@android:drawable/ic_menu_call"
+        android:icon="@drawable/baseline_home_24"
         android:title="Home" />
     <item
         android:id="@+id/menu_item2"
@@ -11,7 +11,7 @@
     <item
         android:id="@+id/menu_item3"
         android:icon="@drawable/band"
-        android:title="Band" />
+        android:title="Group Band" />
     <item
         android:id="@+id/menu_item4"
         android:icon="@drawable/baseline_person_24"

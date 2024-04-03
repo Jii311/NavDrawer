@@ -1,27 +1,27 @@
 package com.example.navdrawer;
 
 public class ModelPenyanyi {
-    String textName;
-    int imageView;
+    String name;
+    int image;
 
     public ModelPenyanyi(String name, int image) {
-        this.textName = name;
-        this.imageView = image;
+        this.name = name;
+        this.image = image;
     }
 
-    public String getTextName() {
-        return textName;
+    public String getName() {
+        return name;
     }
 
-    public void setTextName(String textName) {
-        this.textName = textName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getImageView() {
-        return imageView;
+    public int getImage() {
+        return image;
     }
 
-    public void setImageView(int imageView) {
-        this.imageView = imageView;
+    public void setImage(int image) {
+        this.image = image;
     }
 }

@@ -9,9 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.navdrawer.Fragment.Band;
 import com.example.navdrawer.Fragment.HomeFragment;
 import com.example.navdrawer.Fragment.ProfileFragment;
-import com.example.navdrawer.Fragment.Band;
+import com.example.navdrawer.Fragment.SoloSinger;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,10 +47,14 @@ public class MainActivity extends AppCompatActivity {
                     showHomePage();
                 } else if (itemId == R.id.menu_item2) {
                     getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.content_frame, new SoloSinger())
+                            .commit();
+                    getSupportActionBar().setTitle("Solo Singer");
+                } else if (itemId == R.id.menu_item3) {
+                    getSupportFragmentManager().beginTransaction()
                             .replace(R.id.content_frame, new Band())
                             .commit();
-                    getSupportActionBar().setTitle("Search Page");
-
+                    getSupportActionBar().setTitle("Group Band");
                 } else {
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.content_frame, new ProfileFragment())
